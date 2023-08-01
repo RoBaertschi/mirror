@@ -1,0 +1,121 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "robaertschi.imguirenderer",
+    "module": "imguirenderer",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "imguirenderer-1.0.0.jar",
+          "url": "imguirenderer-1.0.0.jar",
+          "size": 9935,
+          "sha512": "c4f5655c4e8284d5bbc3bbb30262d0042f5574711df670fcb56b47dfef7fb418a0bc7f9c0048d683e104e01cee9f4ad93da087fd59b80174be479151b80c1c14",
+          "sha256": "27f49aa2fa6ac0587db2b1adbcc32d3340cb162083d662c49e325344cc91ef69",
+          "sha1": "b8f74abd3fdc70e9eb06403e367964bb52464feb",
+          "md5": "9377f8ef0c2002b0bd24e3e8f8c1d8ea"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "net.neoforged",
+          "module": "forge",
+          "version": {
+            "requires": "1.20.1-47.1.25_mapped_official_1.20.1"
+          }
+        },
+        {
+          "group": "io.github.spair",
+          "module": "imgui-java-binding",
+          "version": {
+            "requires": "1.86.10"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "io.github.spair",
+          "module": "imgui-java-lwjgl3",
+          "version": {
+            "requires": "1.86.10"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "io.github.spair",
+          "module": "imgui-java-natives-linux",
+          "version": {
+            "requires": "1.86.10"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "io.github.spair",
+          "module": "imgui-java-natives-windows",
+          "version": {
+            "requires": "1.86.10"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl",
+              "module": "*"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "imguirenderer-1.0.0.jar",
+          "url": "imguirenderer-1.0.0.jar",
+          "size": 9935,
+          "sha512": "c4f5655c4e8284d5bbc3bbb30262d0042f5574711df670fcb56b47dfef7fb418a0bc7f9c0048d683e104e01cee9f4ad93da087fd59b80174be479151b80c1c14",
+          "sha256": "27f49aa2fa6ac0587db2b1adbcc32d3340cb162083d662c49e325344cc91ef69",
+          "sha1": "b8f74abd3fdc70e9eb06403e367964bb52464feb",
+          "md5": "9377f8ef0c2002b0bd24e3e8f8c1d8ea"
+        }
+      ]
+    }
+  ]
+}
