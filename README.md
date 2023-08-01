@@ -1,2 +1,0 @@
-# mirror
-My maven
